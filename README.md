@@ -25,13 +25,15 @@ Jenkins | 持续集成工具  | [https://jenkins.io/index.html](https://jenkins.
 Maven | 项目构建管理  | [http://maven.apache.org/](http://maven.apache.org/)
 Gradle | 项目构建工具 | [https://gradle.org/](https://gradle.org/)
 SonarQube | 项目代码质量监控 | [https://www.sonarqube.org/](https://www.sonarqube.org/)
+Swagger2 | 项目API文档生成及测试工具 | [http://swagger.io/](http://swagger.io/)
 #### 前端技术:
 技术 | 名称 | 官网
 ----|------|----
 jQuery | 函式库  | [http://jquery.com/](http://jquery.com/)
 Bootstrap | 前端框架  | [http://getbootstrap.com/](http://getbootstrap.com/)
-
-
+#### API接口
+![image](https://github.com/techa03/learngit/blob/techa03-patch-1/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170623222039.png)
+#### 页面展示
 ![image](https://github.com/techa03/learngit/blob/techa03-patch-1/QQ%E6%88%AA%E5%9B%BE20170315174408.png)
 
 项目启动方法：
