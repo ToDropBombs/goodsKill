@@ -41,9 +41,14 @@ Bootstrap | 前端框架  | [http://getbootstrap.com/](http://getbootstrap.com/)
 
 1.参照redis官网安装redis，默认端口启动activemq，zookeeper；
 
-2.在service模块中找到GoodsKillRpcServiceApplication类main方法启动远程服务；
+2.找到seckill.sql文件，在本地mysql数据库中建立seckill仓库并执行seckill.sql完成数据初始化操作；
 
-3.编译好整个项目后使用tomcat发布server模块，上下文环境可自定义；
+3.jdbc.properties中修改数据库连接信息；
+
+4.在service模块中找到GoodsKillRpcServiceApplication类main方法启动远程服务；
+
+5.编译好整个项目后使用tomcat发布server模块，上下文环境配置为goodsKill,部署成功后访问
+http://localhost:8080/goodsKill/seckill/list 秒杀详情页；
 
 #### 编译部署注意事项：
 1.本项目集成了支付宝二维码支付API接口，使用时需要配置支付宝沙箱环境，具体教程见[支付包二维码支付接入方法](http://blog.csdn.net/techa/article/details/71003519)；
