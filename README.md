@@ -34,6 +34,9 @@ Bootstrap | 前端框架  | [http://getbootstrap.com/](http://getbootstrap.com/)
 ### 页面展示
 ![image](https://github.com/techa03/learngit/blob/techa03-patch-1/QQ%E6%88%AA%E5%9B%BE20170315174408.png)
 
+### sonarQube代码质量管理平台
+![image](https://github.com/techa03/learngit/blob/techa03-patch-1/QQ%E6%88%AA%E5%9B%BE20170627205739.png)
+
 #### 项目启动方法：
 
 1.参照redis官网安装redis，默认端口启动activemq，zookeeper；
