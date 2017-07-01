@@ -41,16 +41,6 @@
             <artifactId>gson</artifactId>
             <version>2.3.1</version>
         </dependency>
-<!--         <dependency> -->
-<!--             <groupId>com.alibaba.alipay</groupId> -->
-<!--             <artifactId>alipay-trade</artifactId> -->
-<!--             <version>20161215</version> -->
-<!--         </dependency> -->
-<!--         <dependency> -->
-<!--             <groupId>com.alibaba.alipay</groupId> -->
-<!--             <artifactId>alipay</artifactId> -->
-<!--             <version>20161213</version> -->
-<!--         </dependency> -->
         <!-- 支付宝sdk本地引入 -->
         <dependency>
             <groupId>com.alibaba.alipay</groupId>
