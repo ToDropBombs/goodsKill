@@ -4,7 +4,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/techa03/goodsKill.svg?style=social&label=Stars)](https://github.com/techa03/goodsKill)
 [![GitHub forks](https://img.shields.io/github/forks/techa03/goodsKill.svg?style=social&label=Fork)](https://github.com/techa03/goodsKill)
 # 前言
-   本demo为仿购物秒杀网站,该系统分为用户注册登录、秒杀商品管理模块。 前端页面基于bootstrap框架搭建，并使用bootstrap-validator插件进行表单验证。 此项目整体采用springMVC+RESTFUL风格，持久层使用的是mybatis。使用maven模块化设计，数据库密码采用AES加密保护，默认未开启。采用dubbo+zookeeper实现服务分布式部署及调用。集成了支付宝支付功能（详见service层alipay模块），用户完成秒杀操作成功之后即可通过二维码扫码完成支付（本demo基于支付宝沙箱环境）。
+本demo为慕课网仿购物秒杀网站,该系统分为用户注册登录、秒杀商品管理模块。 前端页面基于bootstrap框架搭建，并使用bootstrap-validator插件进行表单验证。 此项目整体采用springMVC+RESTFUL风格，持久层使用的是mybatis。使用maven模块化设计，数据库密码采用AES加密保护，默认未开启。采用dubbo+zookeeper实现服务分布式部署及调用。集成了支付宝支付功能（详见service层alipay模块），用户完成秒杀操作成功之后即可通过二维码扫码完成支付（本demo基于支付宝沙箱环境）。
  
 ## 分支介绍
 本项目目前主要有两个分支，`dev_gradle`分支为使用gradle构建工具管理项目依赖，`master`对应maven构建工具，`master`部署方法见底部。本人已经转移到gradle分支上提交代码了，gradle分支集成了druid，swagger2以及pageHelper等功能，如需查看最新提交，请移步`dev_gradle`，`master`已经是很久以前的版本了，不过还是可以用的。[![Build Status](https://travis-ci.org/techa03/goodsKill.svg?branch=master)](https://travis-ci.org/techa03/goodsKill)代表编译成功，该项目仅作学习参考之用，觉得本项目对你有帮助的请多多支持一下~~~~。
