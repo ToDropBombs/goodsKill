@@ -1,13 +1,18 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/techa03/goodsKill/pulls)
 [![Build Status](https://travis-ci.org/techa03/goodsKill.svg?branch=master)](https://travis-ci.org/techa03/goodsKill)
+[![codecov](https://codecov.io/gh/techa03/goodsKill/branch/dev_master/graph/badge.svg)](https://codecov.io/gh/techa03/goodsKill)
+
 [![GitHub stars](https://img.shields.io/github/stars/techa03/goodsKill.svg?style=social&label=Stars)](https://github.com/techa03/goodsKill)
 [![GitHub forks](https://img.shields.io/github/forks/techa03/goodsKill.svg?style=social&label=Fork)](https://github.com/techa03/goodsKill)
+
 # 前言
-本demo为慕课网仿购物秒杀网站,该系统分为用户注册登录、秒杀商品管理模块。 前端页面基于bootstrap框架搭建，并使用bootstrap-validator插件进行表单验证。 此项目整体采用springMVC+RESTFUL风格，持久层使用的是mybatis。使用maven模块化设计，数据库密码采用AES加密保护，默认未开启。采用dubbo+zookeeper实现服务分布式部署及调用。集成了支付宝支付功能（详见service层alipay模块），用户完成秒杀操作成功之后即可通过二维码扫码完成支付（本demo基于支付宝沙箱环境）。
- 
+本demo为慕课网仿购物秒杀网站,该系统分为用户注册登录、秒杀商品管理模块。 前端页面基于bootstrap框架搭建，并使用bootstrap-validator插件进行表单验证。 此项目整体采用springMVC+RESTFUL风格，mybatis持久层框架，数据库密码采用AES加密保护（默认未开启）。采用dubbo+zookeeper实现服务分布式部署及调用。集成了支付宝支付功能（详见service模块），用户完成秒杀操作成功之后即可通过二维码扫码完成支付（本demo基于支付宝沙箱环境）。
+
+本项目扩展了秒杀网站功能，通过gradle分模块管理项目，集成了jmock完成service层的测试，同时项目使用travis持续集成，提交更新后即可触发travis自动构建并完成项目测试覆盖率报告。
+
 ## 分支介绍
-本项目目前主要有两个分支，`dev_gradle`分支为使用gradle构建工具管理项目依赖，`master`对应maven构建工具，`master`部署方法见底部。本人已经转移到gradle分支上提交代码了，gradle分支集成了druid，swagger2以及pageHelper等功能，如需查看最新提交，请移步`dev_gradle`，`master`已经是很久以前的版本了，不过还是可以用的。[![Build Status](https://travis-ci.org/techa03/goodsKill.svg?branch=master)](https://travis-ci.org/techa03/goodsKill)代表编译成功，该项目仅作学习参考之用，觉得本项目对你有帮助的请多多支持一下~~~~。
+本项目目前主要有两个分支，`dev_gradle`分支为使用gradle构建工具管理项目依赖，`master`分支对应maven构建工具，`master`部署方法见底部。本人已经转移到gradle分支上提交代码了，gradle分支集成了druid，swagger2以及pageHelper等功能，`master`已经是很久以前的版本了，不过还是可以用的。[![Build Status](https://travis-ci.org/techa03/goodsKill.svg?branch=dev_gradle)](https://travis-ci.org/techa03/goodsKill)代表编译成功，该项目仅作学习参考之用，觉得本项目对你有帮助的请多多支持一下~~~~。
 
 ## 技术选型
 
@@ -18,7 +23,6 @@ Spring Framework | 容器  | [http://projects.spring.io/spring-framework/](http:
 SpringMVC | MVC框架  | [http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#mvc](http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#mvc)
 MyBatis | ORM框架  | [http://www.mybatis.org/mybatis-3/zh/index.html](http://www.mybatis.org/mybatis-3/zh/index.html)
 MyBatis Generator | 代码生成  | [http://www.mybatis.org/generator/index.html](http://www.mybatis.org/generator/index.html)
-PageHelper | MyBatis物理分页插件  | [http://git.oschina.net/free/Mybatis_PageHelper](http://git.oschina.net/free/Mybatis_PageHelper)
 Druid | 数据库连接池  | [https://github.com/alibaba/druid](https://github.com/alibaba/druid)
 ZooKeeper | 分布式协调服务  | [http://zookeeper.apache.org/](http://zookeeper.apache.org/)
 Dubbo | 分布式服务框架  | [http://dubbo.io/](http://dubbo.io/)
@@ -30,7 +34,6 @@ Jenkins | 持续集成工具  | [https://jenkins.io/index.html](https://jenkins.
 Maven | 项目构建管理  | [http://maven.apache.org/](http://maven.apache.org/)
 Gradle | 项目构建工具 | [https://gradle.org/](https://gradle.org/)
 SonarQube | 项目代码质量监控 | [https://www.sonarqube.org/](https://www.sonarqube.org/)
-Swagger2 | 项目API文档生成及测试工具 | [http://swagger.io/](http://swagger.io/)
 ### 前端技术:
 技术 | 名称 | 官网
 ----|------|----
@@ -41,9 +44,6 @@ Bootstrap | 前端框架  | [http://getbootstrap.com/](http://getbootstrap.com/)
 
 ### 页面展示
 ![image](https://github.com/techa03/learngit/blob/techa03-patch-1/QQ%E6%88%AA%E5%9B%BE20170315174408.png)
-
-### sonarQube代码质量管理平台
-![image](https://github.com/techa03/learngit/blob/techa03-patch-1/QQ%E6%88%AA%E5%9B%BE20170627205739.png)
 
 #### 项目启动方法：
 
